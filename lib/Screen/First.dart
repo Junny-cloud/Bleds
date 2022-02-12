@@ -35,13 +35,18 @@ class First extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Container(
-              child: const Center(child: Text('Inscription')),
-              height: 35,
-              width: 250,
-              decoration: BoxDecoration(
-                  color: Colors.grey[400],
-                  borderRadius: BorderRadius.circular(30)),
+               InkWell(
+                  onTap: () {
+                Navigator.of(context).pushNamed("Inscription");
+              },
+              child: Container(
+                child: const Center(child: Text('Inscription')),
+                height: 35,
+                width: 250,
+                decoration: BoxDecoration(
+                    color: Colors.grey[400],
+                    borderRadius: BorderRadius.circular(30)),
+              ),
             ),
             const SizedBox(
               height: 30,

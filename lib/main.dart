@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'Screen/Acceuil.dart';
 import 'Screen/Connexion.dart';
 import 'Screen/First.dart';
+import 'Screen/Inscription.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       home: const First(),
       routes: {
         "Connexion": (context) => const Connexion(),
+         "Inscription": (context) => const Inscription(),
         "Acceuil": (context) => Acceuil(),
       },
     );
